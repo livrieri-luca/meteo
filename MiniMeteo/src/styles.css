@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Stile per il contenitore principale */
+.container-fluid {
+  margin-top: 0; /* Rimuove il margine superiore */
+  background: linear-gradient(to right, #ff6b6b, #3b5998); /* Sfondo con gradiente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135vh; /* Altezza ridotta a 100vh */
+}
+
+/* Stile per il contenitore delle previsioni meteo */
+.weather {
+  margin-top: -40px;
+  padding: 40px; /* Spaziatura interna */
+  border-radius: 10px; /* Bordi arrotondati */
+  background-color: rgba(255, 255, 255, 0.9); /* Colore di sfondo con opacità */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombra più nitida */
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Stile per il titolo delle previsioni meteo */
+.weather h1 {
+  color: #2d3436; /* Colore del titolo */
+  font-size: 3rem; /* Dimensione del titolo */
+  margin-bottom: 20px; /* Spaziatura inferiore */
+}
+
+/* Stile per il testo delle previsioni meteo */
+.weather p {
+  color: #636e72; /* Colore del testo */
+  font-size: 1.2rem; /* Dimensione del testo */
+  line-height: 1.6; /* Altezza della riga aumentata */
+}
+
+/* Stile per il pulsante "Cerca" */
+.btn {
+  background-color: #2d3436; /* Colore di sfondo del pulsante */
+  color: #fff; /* Colore del testo del pulsante bianco */
+  border: none; /* Rimuove il bordo */
+  padding: 14px 32px; /* Spaziatura interna leggermente aumentata */
+  font-size: 1.1rem; /* Dimensione del testo leggermente aumentata */
+  border-radius: 5px; /* Bordi arrotondati */
+  cursor: pointer; /* Cambia il cursore al passaggio */
+  transition: background-color 0.3s ease; /* Transizione del colore di sfondo */
+}
+
+/* Stile hover per il pulsante "Cerca" */
+.btn:hover {
+  background-color: #636e72; /* Cambia colore al passaggio del mouse */
+}
+
+/* Stile per il label */
+label {
+  display: block; /* Mostra il label come blocco */
+  margin-bottom: 10px; /* Spaziatura inferiore */
+  font-size: 16rem; /* Dimensione del testo delle etichette */
+}
