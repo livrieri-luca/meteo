@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Stile per il contenitore principale */
 .container-fluid {
   margin-top: 0; /* Rimuove il margine superiore */
@@ -26,6 +24,12 @@
   color: #2d3436; /* Colore del titolo */
   font-size: 3rem; /* Dimensione del titolo */
   margin-bottom: 20px; /* Spaziatura inferiore */
+  transition: color 0.3s ease; /* Transizione del colore del testo */
+}
+
+/* Effetto hover per il titolo delle previsioni meteo */
+.weather h1:hover {
+  color: #ff6b6b; /* Cambia colore al passaggio del mouse */
 }
 
 /* Stile per il testo delle previsioni meteo */
