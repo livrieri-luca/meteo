@@ -10,6 +10,7 @@ export class RicercaMeteoComponent {
 
   query: string;
   results: any;
+
   celsiusTemperatures: any;
   originalTemperatures: any;
   celsiusSet: boolean = false;
@@ -36,6 +37,7 @@ export class RicercaMeteoComponent {
           this.celsiusTemperatures = {
             temp: data.main.temp,
             feels_like: data.main.feels_like,
+
             temp_min: data.main.temp_min,
             temp_max: data.main.temp_max
           };

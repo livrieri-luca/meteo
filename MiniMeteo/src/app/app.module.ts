@@ -7,12 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { RicercaMeteoComponent } from './ricerca-meteo/ricerca-meteo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MappaMeteoComponent } from './mappa-meteo/mappa-meteo.component';
+import { GeocodingService } from './geocoding-service.service'; // Modifica qui
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RicercaMeteoComponent
+    RicercaMeteoComponent,
+    MappaMeteoComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    GeocodingService, // Sposta qui
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

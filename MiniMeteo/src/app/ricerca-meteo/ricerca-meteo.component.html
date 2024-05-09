@@ -29,11 +29,10 @@
     </div>
 
     <div class="row justify-content-center mt-3" style="margin-top: 10px;"> <!-- Aggiunta del margine superiore -->
-        <div class="col-md-6">
-            <button class="btn btn-primary btn-sm" (click)="convertToCelsius()">Celsius</button>
-            <button class="btn btn-primary btn-sm ml-2" (click)="convertToFahrenheit()">Fahrenheit</button>
-        </div>
-    </div>
+        <div class="button-group">
+            <button (click)="convertToCelsius()" [ngClass]="{'active': celsiusSet}">Celsius</button>
+            <button (click)="convertToFahrenheit()" [ngClass]="{'active': !celsiusSet}">Fahrenheit</button>
+          </div>
 
     <div *ngIf="results" class="container  mb-5"> <!-- Aggiunta della classe mb-5 per il margine inferiore -->
         <div class="card shadow-sm">

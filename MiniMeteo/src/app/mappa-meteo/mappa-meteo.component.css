@@ -10,3 +10,7 @@
 h1 {
     color: #333; /* Colore del testo del titolo */
 }
+#map {
+    height: 400px; /* Imposta l'altezza desiderata della mappa */
+    width: 100%; /* Usa la larghezza completa del contenitore */
+  }
