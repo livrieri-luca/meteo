@@ -1,29 +1,33 @@
 /* Personalizzazione della barra di navigazione */
 .navbar {
-    background: linear-gradient(to right, #254e69, #5bb7d8); /* Sfondo con gradiente */
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem; /* Dimensione del testo per il nome del team */
-    font-weight: bold; /* Grassetto per il nome del team */
-    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
-    color: #fff; /* Colore del testo */
-    padding: 15px 0; /* Spaziatura interna sopra e sotto */
-    transition: color 0.3s; /* Aggiunge effetto di transizione */
-  }
-  
-  .navbar-brand:hover {
-    color: #1155e7; /* Cambia colore al passaggio del mouse */
-  }
-  
-  .nav-link {
-    font-size: 1.1rem; /* Dimensione del testo per i link nella barra di navigazione */
-    color: #fff; /* Colore del testo */
-    padding: 15px; /* Spaziatura interna */
-    transition: color 0.3s; /* Aggiunge effetto di transizione */
-  }
-  
-  .nav-link:hover {
-    color: #3b5998; /* Cambia colore al passaggio del mouse */
-  }
-  
+  background: linear-gradient(to right, #254e69, #5bb7d8); /* Sfondo con gradiente */
+  display: flex; /* Utilizza il layout flexbox */
+  justify-content: space-between; /* Allinea gli elementi ai lati della barra di navigazione */
+  align-items: center; /* Centra verticalmente gli elementi */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Dimensione del testo per il nome del team */
+  font-weight: bold; /* Grassetto per il nome del team */
+  text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+  color: #fff; /* Colore del testo */
+  transition: color 0.3s; /* Aggiunge effetto di transizione */
+  text-align: center; /* Centra il testo orizzontalmente */
+  flex-grow: 100; /* Espansione per riempire lo spazio rimanente */
+}
+
+.navbar-brand:hover {
+  color: #1155e7; /* Cambia colore al passaggio del mouse */
+}
+
+.nav-link {
+   font-size: 1.1rem; /* Dimensione del testo per i link nella barra di navigazione */
+  color: #fff; /* Colore del testo */
+  padding: 15px; /* Spaziatura interna */
+  transition: color 0.3s; /* Aggiunge effetto di transizione */
+  text-align: left, right;
+}
+
+.nav-link:hover {
+  color: #3b5998; /* Cambia colore al passaggio del mouse */
+}

@@ -1,25 +1,41 @@
-
 <div class="container text-center mt-5">
     <div class="container text-center py-5 bg-primary text-light rounded">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h1 class="display-4 mb-4"><strong>Esplora le Condizioni Meteo</strong></h1>
                 <h2 class="mb-4">Situazione Meteo Attuale</h2>
-                <div class="row justify-content-center align-items-center"> <!-- Nuova riga per allineare la barra di ricerca e il pulsante -->
+                <div class="row justify-content-center align-items-center">
                     <div class="col-md-8">
-                        <div class="input-group mb-4"> <!-- Input group per barra di ricerca e pulsante -->
+                        <div class="input-group mb-4">
                             <input type="text" #newqueryInput class="form-control" placeholder="Metti il nome città">
                             <div class="input-group-append">
                                 <button (click)="submit(newqueryInput)" class="btn btn-light btn-outline-light btn-sm py-0" style="margin-top:2px; height: 45px;" >Cerca</button>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-8">
+                        <label for="listaLing" class="form-label small">Scegli la lingua:</label>
+                        <select class="form-select form-select-sm" id="listaLing" name="listaLing" style="width: 50%;" [(ngModel)]="lingua" (change)="updateLanguage(lingua)">
+                            <option value="it">Italiano</option>
+                            <option value="en">Inglese</option>
+                            <option value="fr">Francese</option>
+                            <option value="es">Spagnolo</option>
+                            <option value="de">Tedesco</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div *ngIf="results" class="container mt-5">
+    <div class="row justify-content-center mt-3" style="margin-top: 10px;"> <!-- Aggiunta del margine superiore -->
+        <div class="col-md-6">
+            <button class="btn btn-primary btn-sm" (click)="convertToCelsius()">Celsius</button>
+            <button class="btn btn-primary btn-sm ml-2" (click)="convertToFahrenheit()">Fahrenheit</button>
+        </div>
+    </div>
+
+    <div *ngIf="results" class="container  mb-5"> <!-- Aggiunta della classe mb-5 per il margine inferiore -->
         <div class="card shadow-sm">
             <div class="card-header bg-info text-light">
                 <h3 class="card-title mb-0">Condizioni Meteo a {{ results.name }} ({{ results.sys.country }})</h3>

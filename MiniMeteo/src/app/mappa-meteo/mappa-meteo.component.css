@@ -1,0 +1,12 @@
+/* mappa-meteo.component.css */
+
+/* Stili per il contenitore della mappa */
+.map-container {
+    padding: 20px; /* Aggiunge spaziatura intorno al contenuto */
+    text-align: center; /* Centra il contenuto orizzontalmente */
+}
+
+/* Stili per il titolo della pagina */
+h1 {
+    color: #333; /* Colore del testo del titolo */
+}
